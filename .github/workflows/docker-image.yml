@@ -23,3 +23,11 @@ jobs:
     -
       name: Push to DockerHub
       run: docker push pcisse200/master-report:${{ secrets.MAJOR }}.${{ secrets.MINOR }}
+    -
+      name: Update Minor version
+      uses: hmanzur/actions-set-secret@v2.0.0
+      with:
+        name: 'MINOR'
+        value: $((${{ secrets.MINOR }}+1))
+        repository: papemor94/ci-actions-test
+        token: ${{ secrets.GIT_TOKEN }}
