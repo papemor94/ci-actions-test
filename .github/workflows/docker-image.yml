@@ -19,23 +19,10 @@ jobs:
     runs-on: self-hosted
     steps:
     - uses: actions/checkout@v2
-    -
-      name: Build the Docker image
-      run: docker build --tag pcisse200/master-rep:${{ secrets.MAJOR }}.${{ secrets.MINOR }} .
-    -
-      name: Login to DockerHub
-      uses: docker/login-action@v1 
-      with:
-        username: ${{ env.DOCKERHUB_USERNAME }}
-        password: ${{ env.DOCKERHUB_PASSWORD }}
-    -
-      name: Push to DockerHub
-      run: docker push pcisse200/master-rep:${{ secrets.MAJOR }}.${{ secrets.MINOR }}
-    -
-      name: Update Minor version
-      uses: hmanzur/actions-set-secret@v2.0.0
-      with:
-        name: 'MINOR'
-        value: $((${{ secrets.MINOR }}+1))
-        repository: papemor94/ci-actions-test
-        token: ${{secrets.GIT_TOKEN}}
+    - name: Build the Docker image for branch ${GITHUB_REF_NAME}
+      # run: DOCKER_BUILDKIT=1 docker build . --build-arg GITHUBLOGIN --build-arg GITHUBPASSWORD --build-arg SONAR_URL --build-arg SONAR_TOKEN --file ./docker/Dockerfile --tag brunoe/samplejee91:${GITHUB_REF_NAME}
+      run: COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 BRANCH=${GITHUB_REF_NAME} TAG=${MINOR} docker-compose build jakartaEE
+    - name: Login to DockerHub Registry
+      run: echo ${{ secrets.DOCKERHUB_PASSWORD }} | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
+    - name: Push to DockerHub Registry
+      run: COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 docker-compose push
