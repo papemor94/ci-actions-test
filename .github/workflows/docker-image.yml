@@ -6,8 +6,8 @@ on:
   pull_request:
     branches: [ main ]
 env:
-  DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
-  DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
+  DOCKERHUB_USERNAME: ${{secrets.DOCKERHUB_USERNAME}}
+  DOCKERHUB_PASSWORD: ${{secrets.DOCKERHUB_PASSWORD}}
   GITHUBLOGIN: ${{secrets.GITHUBLOGIN}}
   GITHUBPASSWORD: ${{secrets.GITHUBPASSWORD}}
   MAJOR: ${{secrets.MAJOR}}
