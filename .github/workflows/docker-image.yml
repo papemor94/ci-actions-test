@@ -19,6 +19,8 @@ jobs:
     runs-on: self-hosted
     steps:
     - uses: actions/checkout@v2
+    - name: Show minor
+      run: echo ${{env.MINOR}}
     - name: Build the Docker image for branch ${GITHUB_REF_NAME}
       # run: DOCKER_BUILDKIT=1 docker build . --build-arg GITHUBLOGIN --build-arg GITHUBPASSWORD --build-arg SONAR_URL --build-arg SONAR_TOKEN --file ./docker/Dockerfile --tag brunoe/samplejee91:${GITHUB_REF_NAME}
       run: COMPOSE_DOCKER_CLI_BUILD=1 DOCKER_BUILDKIT=1 BRANCH=${GITHUB_REF_NAME} TAG=${MINOR} docker-compose build jakartaEE
