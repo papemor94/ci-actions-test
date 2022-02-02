@@ -8,5 +8,5 @@ services:
         - GITHUBLOGIN
         - GITHUBPASSWORD
       context: .
-      dockerfile: docker/Dockerfile
+      dockerfile: Dockerfile
     image: pcisse200/samplejee91:10
