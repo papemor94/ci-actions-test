@@ -13,8 +13,11 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
-    steps:    
+    steps:
     - uses: actions/checkout@v2
+    -
+      name: Build the Docker image
+      run: docker build --tag pcisse200/master-rep:${{ secrets.MAJOR }}.${{ secrets.MINOR }} .
     -
       name: Login to DockerHub
       uses: docker/login-action@v1 
