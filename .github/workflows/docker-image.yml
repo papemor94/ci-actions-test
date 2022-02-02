@@ -8,6 +8,8 @@ on:
 env:
   DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
   DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
+  GITHUBLOGIN: ${{secrets.GITHUBLOGIN}}
+  GITHUBPASSWORD: ${{secrets.GITHUBPASSWORD}}
   MAJOR: ${{secrets.MAJOR}}
   MINOR: ${{secrets.MINOR}}
   
@@ -36,4 +38,5 @@ jobs:
         name: 'MINOR'
         value: $((${{ secrets.MINOR }}+1))
         repository: papemor94/ci-actions-test
-        token: ${{ secrets.GIT_TOKEN }}  
+        username: ${{secrets.GITHUBLOGIN}} 
+        password: ${{secrets.GITHUBPASSWORD}}
