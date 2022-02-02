@@ -118,6 +118,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/com/MyResourceTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../jakartaee-8-project/src/main/java/de/rieckpil/blog/JAXRSConfiguration.java">
           <value>
             <set />

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="com.MyResourceTest" time="1.234" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="com.MyResourceTest" time="2.061" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.10+9"/>
     <property name="sun.boot.library.path" value="C:\Users\Utilisateur\.sdkman\candidates\java\current\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:/Users/Utilisateur/Desktop/m2bruno/App"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:/Users/Utilisateur/Desktop/m2bruno/ci-actions-test"/>
     <property name="java.vm.vendor" value="AdoptOpenJDK"/>
     <property name="java.vendor.url" value="https://adoptopenjdk.net/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="FR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\Utilisateur\Desktop\m2bruno\App"/>
+    <property name="user.dir" value="C:\Users\Utilisateur\Desktop\m2bruno\ci-actions-test"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.runtime.version" value="11.0.10+9"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
@@ -28,7 +28,7 @@
     <property name="os.name" value="Windows 10"/>
     <property name="classworlds.conf" value="C:/Program Files/apache-maven-3.6.3/bin/m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Users\Utilisateur\.sdkman\candidates\java\current\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\Utilisateur\.sdkman\candidates\java\current\bin;C:\Users\Utilisateur\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Utilisateur\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\MinGW\bin;C:\Program Files\nodejs;C:\Program Files\MongoDB\Server\4.4\bin;C:\Users\Utilisateur\AppData\Local\Android\Sdk;C:\Program Files\Android Studio;C:\Program Files\gradle-6.7.1\bin;C:\Program Files (x86)\Yarn\bin;C:\Program Files\apache-maven-3.6.3\bin;C:\MinGW\mingw32\bin;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\Java\jre1.8.0_261;C:\Program Files\MATLAB\R2020b\bin;C:\jdk-16;%JAVA_HOME;C:\nginx-1.14.2;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Java\jdk1.8.0_271;C:\Program Files (x86)\Java\jdk1.8.0_271;C:\Program Files\Git\cmd;C:\Users\Utilisateur\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\Utilisateur\AppData\Local\Programs\Python\Python39;C:\Users\Utilisateur\AppData\Local\Microsoft\WindowsApps;C:\Users\Utilisateur\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Utilisateur\AppData\Roaming\npm;C:\Users\Utilisateur\AppData\Local\Yarn\bin;C:\Users\Utilisateur\AppData\Local\gitkraken\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
+    <property name="java.library.path" value="C:\Users\Utilisateur\.sdkman\candidates\java\current\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\Utilisateur\.sdkman\candidates\java\current\bin;C:\Users\Utilisateur\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Utilisateur\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\MinGW\bin;C:\Program Files\nodejs;C:\Program Files\MongoDB\Server\4.4\bin;C:\Users\Utilisateur\AppData\Local\Android\Sdk;C:\Program Files\Android Studio;C:\Program Files\gradle-6.7.1\bin;C:\Program Files (x86)\Yarn\bin;C:\Program Files\apache-maven-3.6.3\bin;C:\MinGW\mingw32\bin;C:\Program Files (x86)\GnuWin32\bin;C:\Program Files\Java\jre1.8.0_261;C:\Program Files\MATLAB\R2020b\bin;C:\jdk-16;%JAVA_HOME;C:\nginx-1.14.2;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Java\jdk1.8.0_271;C:\Program Files (x86)\Java\jdk1.8.0_271;C:\Program Files\Git\cmd;C:\Users\Utilisateur\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\Utilisateur\AppData\Local\Programs\Python\Python39;C:\Users\Utilisateur\AppData\Local\Microsoft\WindowsApps;C:\Users\Utilisateur\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Utilisateur\AppData\Roaming\npm;C:\Users\Utilisateur\AppData\Local\Yarn\bin;C:\Users\Utilisateur\AppData\Local\gitkraken\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
     <property name="maven.conf" value="C:/Program Files/apache-maven-3.6.3/conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="55.0"/>
@@ -45,7 +45,7 @@
     <property name="java.class.path" value="C:/Program Files/apache-maven-3.6.3/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean package"/>
     <property name="java.home" value="C:\Users\Utilisateur\.sdkman\candidates\java\current"/>
     <property name="user.language" value="fr"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -63,5 +63,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.MyResourceTest" name="testGetIt" time="1.234"/>
+  <testcase classname="com.MyResourceTest" name="testGetIt" time="2.061"/>
 </testsuite>
