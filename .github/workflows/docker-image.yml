@@ -38,5 +38,4 @@ jobs:
         name: 'MINOR'
         value: $((${{ secrets.MINOR }}+1))
         repository: papemor94/ci-actions-test
-        username: ${{secrets.GITHUBLOGIN}} 
-        password: ${{secrets.GITHUBPASSWORD}}
+        token: ${{secrets.GIT_TOKEN}} 
