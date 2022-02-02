@@ -6,7 +6,8 @@ services:
       args:
         - MINOR
         - GITHUBLOGIN
+        - TAG
         - GITHUBPASSWORD
       context: .
       dockerfile: Dockerfile
-    image: pcisse200/samplejee91:10
+    image: pcisse200/samplejee9100:${TAG:-latest}
