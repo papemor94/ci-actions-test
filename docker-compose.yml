@@ -10,4 +10,4 @@ services:
         - GITHUBPASSWORD
       context: .
       dockerfile: Dockerfile
-    image: pcisse200/samplejee9100:${TAG:-latest}
+    image: pcisse200/samplejee8:${TAG:-latest}
