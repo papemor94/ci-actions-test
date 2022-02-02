@@ -1,6 +1,14 @@
 # First stage: complete build environment
 
 FROM maven:3.5.4-jdk-8-alpine AS builder
+
+ARG BRANCH
+ARG GITHUBLOGIN
+ARG GITHUBPASSWORD
+ARG SONAR_URL
+ARG SONAR_TOKEN
+ARG MINOR
+
 COPY pom.xml /services/pom.xml
 COPY /src /services/src
 WORKDIR /services

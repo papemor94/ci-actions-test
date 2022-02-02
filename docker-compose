@@ -1,0 +1,12 @@
+
+version: '3'
+services:
+  jakartaEE:
+    build:
+      args:
+        - MINOR
+        - GITHUBLOGIN
+        - GITHUBPASSWORD
+      context: .
+      dockerfile: docker/Dockerfile
+    image: pcisse200/samplejee91:${MINOR:-latest}
