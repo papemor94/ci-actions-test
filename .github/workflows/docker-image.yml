@@ -38,4 +38,4 @@ jobs:
         name: 'MINOR'
         value: $((${{ secrets.MINOR }}+1))
         repository: papemor94/ci-actions-test
-        token: ${{secrets.GIT_TOKEN}} 
+        token: ${{secrets.GIT_TOKEN}}
