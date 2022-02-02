@@ -9,4 +9,4 @@ services:
         - GITHUBPASSWORD
       context: .
       dockerfile: docker/Dockerfile
-    image: pcisse200/samplejee91:${MINOR:-latest}
+    image: pcisse200/samplejee91:10
