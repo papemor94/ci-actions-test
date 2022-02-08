@@ -2,15 +2,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-<properties>
-  <sonar.organization>papemor94</sonar.organization>
-  <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-</properties>
     <groupId>app</groupId>
     <artifactId>App</artifactId>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
     <name>App</name>
+         
+         <properties>
+           <sonar.organization>papemor94</sonar.organization>
+           <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+         </properties>
+
 
     <dependencyManagement>
         <dependencies>
